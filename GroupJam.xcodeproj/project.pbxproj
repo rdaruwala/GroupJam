@@ -15,6 +15,7 @@
 		C11037AB1D9734FF00BBE12A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */; };
 		C11037B61D9734FF00BBE12A /* GroupJamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037B51D9734FF00BBE12A /* GroupJamTests.swift */; };
 		C11037C11D9734FF00BBE12A /* GroupJamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */; };
+		C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11037D11D9736D800BBE12A /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C11037BC1D9734FF00BBE12A /* GroupJamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupJamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupJamUITests.swift; sourceTree = "<group>"; };
 		C11037C21D9734FF00BBE12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11037D11D9736D800BBE12A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				C11037B41D9734FF00BBE12A /* GroupJamTests */,
 				C11037BF1D9734FF00BBE12A /* GroupJamUITests */,
 				C110379B1D9734FF00BBE12A /* Products */,
+				C11037CE1D97368E00BBE12A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				C11037C21D9734FF00BBE12A /* Info.plist */,
 			);
 			path = GroupJamUITests;
+			sourceTree = "<group>";
+		};
+		C11037CE1D97368E00BBE12A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11037D11D9736D800BBE12A /* Spotify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +428,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
 				INFOPLIST_FILE = GroupJam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
@@ -428,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Resources",
+				);
 				INFOPLIST_FILE = GroupJam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
