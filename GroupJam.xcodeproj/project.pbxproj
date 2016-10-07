@@ -23,6 +23,7 @@
 		C18DB2031DA85D2000BC44AF /* hostJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2011DA85D2000BC44AF /* hostJam.png */; };
 		C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2021DA85D2000BC44AF /* joinJam.png */; };
 		C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2051DA85EA700BC44AF /* applemusic.jpg */; };
+		C18DB2081DA8671600BC44AF /* Private_Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DB2071DA8671600BC44AF /* Private_Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C18DB2011DA85D2000BC44AF /* hostJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hostJam.png; path = Resources/Pictures/hostJam.png; sourceTree = "<group>"; };
 		C18DB2021DA85D2000BC44AF /* joinJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joinJam.png; path = Resources/Pictures/joinJam.png; sourceTree = "<group>"; };
 		C18DB2051DA85EA700BC44AF /* applemusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = applemusic.jpg; path = Resources/Pictures/applemusic.jpg; sourceTree = "<group>"; };
+		C18DB2071DA8671600BC44AF /* Private_Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private_Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				C11037AC1D9734FF00BBE12A /* Info.plist */,
 				C11037A41D9734FF00BBE12A /* GroupJam.xcdatamodeld */,
 				C18DB1F91DA8553300BC44AF /* GroupJam-Bridging-Header.h */,
+				C18DB2071DA8671600BC44AF /* Private_Config.swift */,
 			);
 			path = GroupJam;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18DB2081DA8671600BC44AF /* Private_Config.swift in Sources */,
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
 				C110379E1D9734FF00BBE12A /* AppDelegate.swift in Sources */,
 				C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */,

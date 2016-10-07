@@ -8,15 +8,10 @@
 
 import UIKit
 
-class SelectLoginViewController: UIViewController {
+class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     @IBOutlet weak var spotifyButton: UIButton!
     @IBOutlet weak var AMButton: UIButton!
     
-    //Variables for Spotify API
-    let kClientID = "352c57b5aed84f8984ec1b6b9469a9ee"
-    let kCallbackURL = "groupjam://callback"
-    let kTokenSwapURL = "http://localhost:1234/swap"
-    let kTokenRefreshURL = "http://localhost:1234/refresh"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +23,19 @@ class SelectLoginViewController: UIViewController {
     
     
     @IBAction func onSpotifyButtonPress(_ sender: AnyObject) {
+        spotifyAuthenticator?.clientID = kClientID
+        spotifyAuthenticator?.requestedScopes = [SPTAuthStreamingScope]
+        spotifyAuthenticator?.redirectURL = NSURL(string: kCallbackURL) as URL!
+        spotifyAuthenticator?.tokenSwapURL = NSURL(string: kTokenSwapURL) as URL!
+        spotifyAuthenticator?.tokenRefreshURL = NSURL(string: kTokenRefreshURL) as URL!
+        
+      
+        
+        let spotifyAuthenticationViewController = SPTAuthViewController.authentication()
+        spotifyAuthenticationViewController?.delegate = self
+        spotifyAuthenticationViewController?.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        spotifyAuthenticationViewController?.definesPresentationContext = true
+        present(spotifyAuthenticationViewController!, animated: false, completion: nil)
     }
     
     @IBAction func onAMButtonPress(_ sender: AnyObject) {
@@ -36,6 +44,18 @@ class SelectLoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didLoginWith session: SPTSession!) {
+    }
+    
+    func authenticationViewControllerDidCancelLogin(_ authenticationViewController: SPTAuthViewController!) {
+
+    }
+    
+    func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didFailToLogin error: Error!) {
+        
+    }
+
     
     
 }
