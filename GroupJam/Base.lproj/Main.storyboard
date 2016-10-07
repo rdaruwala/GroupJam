@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="77R-XY-exQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
@@ -8,35 +8,140 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="tCq-2Q-61Q">
+            <objects>
+                <viewController id="77R-XY-exQ" customClass="ViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ouu-n2-vUk"/>
+                        <viewControllerLayoutGuide type="bottom" id="GSC-5k-xLW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oNO-2d-Jaf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ila-0a-nuA">
+                                <frame key="frameInset" minX="16" minY="49" width="343" height="91"/>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="41"/>
+                                <color key="textColor" red="1" green="0.35739266600000003" blue="0.22437102489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Would you like to host or join a Jam?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvd-WO-Ev3">
+                                <frame key="frameInset" minX="16" minY="148" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZX-Hp-z0x">
+                                <frame key="frameInset" minX="34" minY="237" width="308" height="56"/>
+                                <state key="normal" image="hostJam.png"/>
+                                <connections>
+                                    <action selector="onHostJamButtonPress:" destination="77R-XY-exQ" eventType="touchUpInside" id="0L5-1F-5m2"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BvB-dU-Bga"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uM5-3F-yry">
+                                <frame key="frameInset" minX="40" minY="470" width="295" height="56"/>
+                                <state key="normal" image="joinJam.png"/>
+                                <connections>
+                                    <action selector="onJoinJamButtonPress:" destination="77R-XY-exQ" eventType="touchUpInside" id="tev-MF-IMT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="mZX-Hp-z0x" firstAttribute="top" secondItem="pvd-WO-Ev3" secondAttribute="bottom" constant="68" id="3h9-kB-iXh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ila-0a-nuA" secondAttribute="leading" id="501-RH-buB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uM5-3F-yry" secondAttribute="leading" id="9Fg-gV-0dS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mZX-Hp-z0x" secondAttribute="trailing" id="JNQ-0O-8uJ"/>
+                            <constraint firstItem="GSC-5k-xLW" firstAttribute="top" secondItem="uM5-3F-yry" secondAttribute="bottom" constant="141" id="RKD-Gs-Mn2"/>
+                            <constraint firstItem="pvd-WO-Ev3" firstAttribute="top" secondItem="ila-0a-nuA" secondAttribute="bottom" constant="8" id="Sqp-t9-E7x"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mZX-Hp-z0x" secondAttribute="leading" id="hPm-gY-3Qz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uM5-3F-yry" secondAttribute="trailing" id="iSO-MU-EHp"/>
+                            <constraint firstItem="ila-0a-nuA" firstAttribute="top" secondItem="Ouu-n2-vUk" secondAttribute="bottom" constant="43" id="kkH-f6-eVf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ila-0a-nuA" secondAttribute="trailing" id="lvk-EJ-efD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pvd-WO-Ev3" secondAttribute="leading" id="mHB-gT-bGT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pvd-WO-Ev3" secondAttribute="trailing" constant="-4" id="yjn-Il-f8K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hostJamButton" destination="mZX-Hp-z0x" id="ALv-kg-xsw"/>
+                        <outlet property="joinJamButton" destination="uM5-3F-yry" id="GYf-Vj-9NG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yz-TH-bVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767.20000000000005" y="142.57871064467767"/>
+        </scene>
+        <!--Select Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SelectLoginViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlN-yU-JAe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlN-yU-JAe">
                                 <frame key="frameInset" minX="16" minY="63" width="343" height="91"/>
                                 <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="41"/>
                                 <color key="textColor" red="1" green="0.35739266599241504" blue="0.22437102492848793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QL-7u-Yf9">
+                                <frame key="frameInset" minX="72" minY="288" width="231" height="125"/>
+                                <state key="normal" image="spotify.png"/>
+                                <connections>
+                                    <action selector="onSpotifyButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWO-Oe-xLc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please Choose a Method to Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNj-FW-Ij6">
+                                <frame key="frameInset" minX="16" minY="162" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.38458362477243246" blue="0.23792502288379425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JI-QU-841">
+                                <frame key="frameInset" minX="-107" minY="465" width="654" height="217"/>
+                                <state key="normal" title="Button" image="applemusic.jpg"/>
+                                <connections>
+                                    <action selector="onAMButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twY-ya-Ccl"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="hNj-FW-Ij6" secondAttribute="leading" id="1PQ-Yb-TA6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qlN-yU-JAe" secondAttribute="trailing" id="5fN-89-hyW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2QL-7u-Yf9" secondAttribute="trailing" id="5jZ-bc-uIf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2QL-7u-Yf9" secondAttribute="leading" id="98d-Jn-z1O"/>
+                            <constraint firstItem="2QL-7u-Yf9" firstAttribute="top" secondItem="qlN-yU-JAe" secondAttribute="bottom" constant="118" id="AXo-60-Qe8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2QL-7u-Yf9" secondAttribute="bottom" constant="320" id="EsU-eI-8i2"/>
+                            <constraint firstItem="hNj-FW-Ij6" firstAttribute="top" secondItem="qlN-yU-JAe" secondAttribute="bottom" constant="8" id="KsY-pA-LuD"/>
                             <constraint firstItem="qlN-yU-JAe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="QSC-Pz-hbZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2JI-QU-841" secondAttribute="trailing" constant="-188" id="USR-Hl-7cR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qlN-yU-JAe" secondAttribute="leading" id="X9E-zA-Snr"/>
+                            <constraint firstItem="2JI-QU-841" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-123" id="j1c-Kh-al3"/>
+                            <constraint firstItem="2JI-QU-841" firstAttribute="top" secondItem="2QL-7u-Yf9" secondAttribute="bottom" constant="52" id="rIX-hF-k4y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hNj-FW-Ij6" secondAttribute="trailing" constant="-4" id="tSJ-AX-rCO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AMButton" destination="2JI-QU-841" id="xna-lh-6SU"/>
+                        <outlet property="spotifyButton" destination="2QL-7u-Yf9" id="3QG-e0-Ltq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="applemusic.jpg" width="600" height="314"/>
+        <image name="hostJam.png" width="217" height="56"/>
+        <image name="joinJam.png" width="208" height="56"/>
+        <image name="spotify.png" width="1070" height="487"/>
+    </resources>
 </document>

@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var hostJamButton: UIButton!
+    @IBOutlet weak var joinJamButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    @IBAction func onHostJamButtonPress(_ sender: AnyObject) {
+        
     }
 
+    @IBAction func onJoinJamButtonPress(_ sender: AnyObject) {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

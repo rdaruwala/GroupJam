@@ -18,6 +18,11 @@
 		C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11037D11D9736D800BBE12A /* Spotify.framework */; };
 		C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */; };
 		C18DB1F81DA8539400BC44AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */; };
+		C18DB1FD1DA8575C00BC44AF /* spotify.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB1FC1DA8575C00BC44AF /* spotify.png */; };
+		C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */; };
+		C18DB2031DA85D2000BC44AF /* hostJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2011DA85D2000BC44AF /* hostJam.png */; };
+		C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2021DA85D2000BC44AF /* joinJam.png */; };
+		C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2051DA85EA700BC44AF /* applemusic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,12 @@
 		C11037D11D9736D800BBE12A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Spotify.framework; sourceTree = "<group>"; };
 		C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C18DB1F91DA8553300BC44AF /* GroupJam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupJam-Bridging-Header.h"; sourceTree = "<group>"; };
+		C18DB1FC1DA8575C00BC44AF /* spotify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spotify.png; path = Resources/Pictures/spotify.png; sourceTree = "<group>"; };
+		C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLoginViewController.swift; sourceTree = "<group>"; };
+		C18DB2011DA85D2000BC44AF /* hostJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hostJam.png; path = Resources/Pictures/hostJam.png; sourceTree = "<group>"; };
+		C18DB2021DA85D2000BC44AF /* joinJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joinJam.png; path = Resources/Pictures/joinJam.png; sourceTree = "<group>"; };
+		C18DB2051DA85EA700BC44AF /* applemusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = applemusic.jpg; path = Resources/Pictures/applemusic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +103,7 @@
 				C11037B41D9734FF00BBE12A /* GroupJamTests */,
 				C11037BF1D9734FF00BBE12A /* GroupJamUITests */,
 				C110379B1D9734FF00BBE12A /* Products */,
+				C18DB1FE1DA8576C00BC44AF /* Pictures */,
 				C11037CE1D97368E00BBE12A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -111,11 +123,13 @@
 			children = (
 				C110379D1D9734FF00BBE12A /* AppDelegate.swift */,
 				C110379F1D9734FF00BBE12A /* ViewController.swift */,
+				C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */,
 				C11037A11D9734FF00BBE12A /* Main.storyboard */,
 				C11037A71D9734FF00BBE12A /* Assets.xcassets */,
 				C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */,
 				C11037AC1D9734FF00BBE12A /* Info.plist */,
 				C11037A41D9734FF00BBE12A /* GroupJam.xcdatamodeld */,
+				C18DB1F91DA8553300BC44AF /* GroupJam-Bridging-Header.h */,
 			);
 			path = GroupJam;
 			sourceTree = "<group>";
@@ -146,6 +160,17 @@
 				C11037D11D9736D800BBE12A /* Spotify.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C18DB1FE1DA8576C00BC44AF /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				C18DB2051DA85EA700BC44AF /* applemusic.jpg */,
+				C18DB1FC1DA8575C00BC44AF /* spotify.png */,
+				C18DB2011DA85D2000BC44AF /* hostJam.png */,
+				C18DB2021DA85D2000BC44AF /* joinJam.png */,
+			);
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +241,7 @@
 				TargetAttributes = {
 					C11037991D9734FF00BBE12A = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					C11037B01D9734FF00BBE12A = {
@@ -255,9 +281,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18DB1FD1DA8575C00BC44AF /* spotify.png in Resources */,
 				C11037AB1D9734FF00BBE12A /* LaunchScreen.storyboard in Resources */,
 				C11037A81D9734FF00BBE12A /* Assets.xcassets in Resources */,
 				C11037A31D9734FF00BBE12A /* Main.storyboard in Resources */,
+				C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */,
+				C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */,
+				C18DB2031DA85D2000BC44AF /* hostJam.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +314,7 @@
 			files = (
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
 				C110379E1D9734FF00BBE12A /* AppDelegate.swift in Sources */,
+				C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */,
 				C11037A61D9734FF00BBE12A /* GroupJam.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resources",
@@ -445,6 +477,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroupJam/GroupJam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -453,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resources",
@@ -462,6 +497,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GroupJam/GroupJam-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
