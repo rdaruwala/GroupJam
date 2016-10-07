@@ -16,6 +16,8 @@
 		C11037B61D9734FF00BBE12A /* GroupJamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037B51D9734FF00BBE12A /* GroupJamTests.swift */; };
 		C11037C11D9734FF00BBE12A /* GroupJamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */; };
 		C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11037D11D9736D800BBE12A /* Spotify.framework */; };
+		C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */; };
+		C18DB1F81DA8539400BC44AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupJamUITests.swift; sourceTree = "<group>"; };
 		C11037C21D9734FF00BBE12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11037D11D9736D800BBE12A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Spotify.framework; sourceTree = "<group>"; };
+		C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18DB1F81DA8539400BC44AF /* SystemConfiguration.framework in Frameworks */,
+				C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */,
 				C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +141,8 @@
 		C11037CE1D97368E00BBE12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */,
+				C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */,
 				C11037D11D9736D800BBE12A /* Spotify.framework */,
 			);
 			name = Frameworks;
@@ -434,6 +442,7 @@
 				);
 				INFOPLIST_FILE = GroupJam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -450,6 +459,7 @@
 				);
 				INFOPLIST_FILE = GroupJam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rohandaruwala.GroupJam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -529,6 +539,7 @@
 				C11037C71D9734FF00BBE12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11037C81D9734FF00BBE12A /* Build configuration list for PBXNativeTarget "GroupJamTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +548,7 @@
 				C11037CA1D9734FF00BBE12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C11037CB1D9734FF00BBE12A /* Build configuration list for PBXNativeTarget "GroupJamUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +557,7 @@
 				C11037CD1D9734FF00BBE12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
