@@ -89,6 +89,126 @@
             </objects>
             <point key="canvasLocation" x="-767.20000000000005" y="142.57871064467767"/>
         </scene>
+        <!--Setup Jam View Controller-->
+        <scene sceneID="4bR-xF-BcI">
+            <objects>
+                <viewController id="axx-AW-nPD" customClass="SetupJamViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7HO-8A-4Lk"/>
+                        <viewControllerLayoutGuide type="bottom" id="6pK-qa-0QS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BDc-G4-H5o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uI-jg-fQN">
+                                <frame key="frameInset" minX="16" minY="84" width="343" height="91"/>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="41"/>
+                                <color key="textColor" red="1" green="0.35739266600000003" blue="0.22437102489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select Jam Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-q0-6IQ">
+                                <frame key="frameInset" minX="16" minY="174" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jam Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-xS-uZM">
+                                <frame key="frameInset" minX="16" minY="261" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password (optional):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMr-Ua-rYu">
+                                <frame key="frameInset" minX="16" minY="303" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Searchable location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVq-Ga-h2M">
+                                <frame key="frameInset" minX="16" minY="376" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Approve all Joins:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cln-In-RWc">
+                                <frame key="frameInset" minX="16" minY="461" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="500" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="myJam" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jj-pa-3Q4">
+                                <frame key="frameInset" minX="207" minY="256" width="113" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="jamPass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aor-Gm-rDV">
+                                <frame key="frameInset" minX="207" minY="298" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWB-Z7-wjh">
+                                <frame key="frameInset" minX="264" minY="451" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obf-nk-OXH">
+                                <frame key="frameInset" minX="27" minY="518" width="322" height="69"/>
+                                <state key="normal" image="createJam.png"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wb-aJ-nXG">
+                                <frame key="frameInset" minX="239" minY="366" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="aor-Gm-rDV" firstAttribute="leading" secondItem="rMr-Ua-rYu" secondAttribute="trailing" constant="50" id="0QW-RG-lhb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="obf-nk-OXH" secondAttribute="leading" id="5ru-KX-wql"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rMr-Ua-rYu" secondAttribute="leading" id="6ek-Cz-wP5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3uI-jg-fQN" secondAttribute="trailing" id="7sD-WN-dY3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XH8-q0-6IQ" secondAttribute="leading" id="AMK-sB-uGU"/>
+                            <constraint firstItem="0Wb-aJ-nXG" firstAttribute="top" secondItem="sVq-Ga-h2M" secondAttribute="top" id="CvM-Am-cXZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="d9p-xS-uZM" secondAttribute="leading" id="Jfb-PS-9lZ"/>
+                            <constraint firstItem="d9p-xS-uZM" firstAttribute="top" secondItem="XH8-q0-6IQ" secondAttribute="bottom" constant="50" id="Kpd-KU-3jO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3uI-jg-fQN" secondAttribute="leading" id="Kva-MJ-3V8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XH8-q0-6IQ" secondAttribute="trailing" id="QJD-en-UMp"/>
+                            <constraint firstItem="3uI-jg-fQN" firstAttribute="top" secondItem="7HO-8A-4Lk" secondAttribute="bottom" constant="43" id="ZKp-j7-wen"/>
+                            <constraint firstItem="4jj-pa-3Q4" firstAttribute="leading" secondItem="d9p-xS-uZM" secondAttribute="trailing" constant="50" id="c1B-j0-kup"/>
+                            <constraint firstItem="sVq-Ga-h2M" firstAttribute="top" secondItem="rMr-Ua-rYu" secondAttribute="bottom" constant="20" id="hUY-Gf-TPe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sVq-Ga-h2M" secondAttribute="leading" id="iO1-Zr-zXZ"/>
+                            <constraint firstItem="SWB-Z7-wjh" firstAttribute="top" secondItem="cln-In-RWc" secondAttribute="top" id="j70-nH-ant"/>
+                            <constraint firstItem="0Wb-aJ-nXG" firstAttribute="leading" secondItem="sVq-Ga-h2M" secondAttribute="trailing" constant="50" id="nae-2s-DJI"/>
+                            <constraint firstItem="rMr-Ua-rYu" firstAttribute="top" secondItem="d9p-xS-uZM" secondAttribute="bottom" constant="20" id="o8o-Db-Z1w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="obf-nk-OXH" secondAttribute="trailing" id="oBb-9i-vaY"/>
+                            <constraint firstItem="aor-Gm-rDV" firstAttribute="top" secondItem="rMr-Ua-rYu" secondAttribute="top" id="oQ3-zH-t9S"/>
+                            <constraint firstItem="6pK-qa-0QS" firstAttribute="top" secondItem="obf-nk-OXH" secondAttribute="bottom" constant="200" id="oSo-5z-lP9"/>
+                            <constraint firstItem="4jj-pa-3Q4" firstAttribute="top" secondItem="d9p-xS-uZM" secondAttribute="top" id="qqU-4I-Jlp"/>
+                            <constraint firstItem="XH8-q0-6IQ" firstAttribute="top" secondItem="3uI-jg-fQN" secondAttribute="bottom" constant="8" id="vGo-lG-q5g"/>
+                            <constraint firstItem="SWB-Z7-wjh" firstAttribute="leading" secondItem="cln-In-RWc" secondAttribute="trailing" constant="50" id="vOp-va-vra"/>
+                            <constraint firstItem="cln-In-RWc" firstAttribute="top" secondItem="sVq-Ga-h2M" secondAttribute="bottom" constant="20" id="vva-Gd-UYr"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cln-In-RWc" secondAttribute="leading" id="wbo-2x-FA8"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="d1O-na-COs" appends="YES" id="0Gc-dw-goS"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="ApproveOption" destination="SWB-Z7-wjh" id="6Iv-RU-vvM"/>
+                        <outlet property="LocationOption" destination="0Wb-aJ-nXG" id="Tvi-d1-UVQ"/>
+                        <outlet property="jamNameTextField" destination="4jj-pa-3Q4" id="QR9-nw-UHk"/>
+                        <outlet property="jamPassTextField" destination="aor-Gm-rDV" id="AE7-RW-1OI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SN0-DF-DXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="d1O-na-COs">
+                    <connections>
+                        <action selector="onScreenTapAction:" destination="axx-AW-nPD" id="5AU-7B-RWC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="165.06746626686657"/>
+        </scene>
         <!--Select Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -148,6 +268,7 @@
                     <connections>
                         <outlet property="AMButton" destination="2JI-QU-841" id="xna-lh-6SU"/>
                         <outlet property="spotifyButton" destination="2QL-7u-Yf9" id="3QG-e0-Ltq"/>
+                        <segue destination="axx-AW-nPD" kind="show" identifier="jamSettings" id="u7o-Zt-r4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,6 +278,7 @@
     </scenes>
     <resources>
         <image name="applemusic.jpg" width="600" height="314"/>
+        <image name="createJam.png" width="268" height="69"/>
         <image name="hostJam.png" width="217" height="56"/>
         <image name="joinJam.png" width="208" height="56"/>
         <image name="spotify.png" width="1070" height="487"/>

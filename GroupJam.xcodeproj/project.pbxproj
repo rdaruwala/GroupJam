@@ -21,6 +21,8 @@
 		C13302591DA96DC000ABFED5 /* SpotifyJam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13302581DA96DC000ABFED5 /* SpotifyJam.swift */; };
 		C133025B1DA96DEA00ABFED5 /* AppleMusicJam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133025A1DA96DEA00ABFED5 /* AppleMusicJam.swift */; };
 		C133025D1DA99A7600ABFED5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133025C1DA99A7600ABFED5 /* NavigationController.swift */; };
+		C16473661DA99CB200AAE9EA /* SetupJamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */; };
+		C16473681DA9A28200AAE9EA /* createJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C16473671DA9A28200AAE9EA /* createJam.png */; };
 		C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */; };
 		C18DB1F81DA8539400BC44AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */; };
 		C18DB1FD1DA8575C00BC44AF /* spotify.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB1FC1DA8575C00BC44AF /* spotify.png */; };
@@ -72,6 +74,8 @@
 		C13302581DA96DC000ABFED5 /* SpotifyJam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyJam.swift; sourceTree = "<group>"; };
 		C133025A1DA96DEA00ABFED5 /* AppleMusicJam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicJam.swift; sourceTree = "<group>"; };
 		C133025C1DA99A7600ABFED5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupJamViewController.swift; sourceTree = "<group>"; };
+		C16473671DA9A28200AAE9EA /* createJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = createJam.png; path = Resources/Pictures/createJam.png; sourceTree = "<group>"; };
 		C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C18DB1F91DA8553300BC44AF /* GroupJam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GroupJam-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				C110379F1D9734FF00BBE12A /* ViewController.swift */,
 				C133025C1DA99A7600ABFED5 /* NavigationController.swift */,
 				C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */,
+				C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */,
 				C11037A11D9734FF00BBE12A /* Main.storyboard */,
 				C11037A71D9734FF00BBE12A /* Assets.xcassets */,
 				C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */,
@@ -203,6 +208,7 @@
 		C18DB1FE1DA8576C00BC44AF /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				C16473671DA9A28200AAE9EA /* createJam.png */,
 				C18DB2051DA85EA700BC44AF /* applemusic.jpg */,
 				C18DB1FC1DA8575C00BC44AF /* spotify.png */,
 				C18DB2011DA85D2000BC44AF /* hostJam.png */,
@@ -323,6 +329,7 @@
 				C11037AB1D9734FF00BBE12A /* LaunchScreen.storyboard in Resources */,
 				C11037A81D9734FF00BBE12A /* Assets.xcassets in Resources */,
 				C11037A31D9734FF00BBE12A /* Main.storyboard in Resources */,
+				C16473681DA9A28200AAE9EA /* createJam.png in Resources */,
 				C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */,
 				C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */,
 				C18DB2031DA85D2000BC44AF /* hostJam.png in Resources */,
@@ -351,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13302561DA96D3B00ABFED5 /* Song.swift in Sources */,
+				C16473661DA99CB200AAE9EA /* SetupJamViewController.swift in Sources */,
 				C13302591DA96DC000ABFED5 /* SpotifyJam.swift in Sources */,
 				C18DB20C1DA86AEF00BC44AF /* Private_Config.swift in Sources */,
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
