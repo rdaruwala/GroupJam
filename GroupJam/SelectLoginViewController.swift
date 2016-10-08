@@ -12,24 +12,33 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     @IBOutlet weak var spotifyButton: UIButton!
     @IBOutlet weak var AMButton: UIButton!
     
+    //Spotify Variables
+    var SpotifyID:String!
+    var SpotifyCallbackURL:String!
+    var SpotifyTokenSwap:String!
+    var SpotifyTokenRefresh:String!
+    let spotifyAuthenticator = SPTAuth.defaultInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //spotifyButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        //spotifyButton.setImage(UIImage(named: "spotify.png"), for: UIControlState.normal)
+        let configuration = Config()
+        
+        SpotifyID = configuration.SpotifyID
+        SpotifyCallbackURL = configuration.SpotifyCallbackURL
+        SpotifyTokenSwap = configuration.SpotifyTokenSwap
+        SpotifyTokenRefresh = configuration.SpotifyTokenRefresh
         
     }
     
     
     @IBAction func onSpotifyButtonPress(_ sender: AnyObject) {
-        spotifyAuthenticator?.clientID = kClientID
+        spotifyAuthenticator?.clientID = SpotifyID
         spotifyAuthenticator?.requestedScopes = [SPTAuthStreamingScope]
-        spotifyAuthenticator?.redirectURL = NSURL(string: kCallbackURL) as URL!
-        spotifyAuthenticator?.tokenSwapURL = NSURL(string: kTokenSwapURL) as URL!
-        spotifyAuthenticator?.tokenRefreshURL = NSURL(string: kTokenRefreshURL) as URL!
+        spotifyAuthenticator?.redirectURL = NSURL(string: SpotifyCallbackURL) as URL!
+        spotifyAuthenticator?.tokenSwapURL = NSURL(string: SpotifyTokenSwap) as URL!
+        spotifyAuthenticator?.tokenRefreshURL = NSURL(string: SpotifyTokenRefresh) as URL!
         
-      
         
         let spotifyAuthenticationViewController = SPTAuthViewController.authentication()
         spotifyAuthenticationViewController?.delegate = self
