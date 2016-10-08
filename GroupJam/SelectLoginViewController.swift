@@ -61,6 +61,9 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
         
         self.present(alert, animated: true, completion: nil)
     }
+    @IBAction func onCloseButtonPress(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func authenticationViewControllerDidCancelLogin(_ authenticationViewController: SPTAuthViewController!) {
         let alert = UIAlertController(title: "Login Cancelled", message:

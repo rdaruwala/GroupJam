@@ -46,6 +46,17 @@
                                     <action selector="onJoinJamButtonPress:" destination="77R-XY-exQ" eventType="touchUpInside" id="tev-MF-IMT"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-29-Wzg">
+                                <frame key="frameInset" minX="1" height="44" maxX="-1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="7aX-Vr-m83"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -110,6 +121,24 @@
                                     <action selector="onAMButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twY-ya-Ccl"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHv-23-5Ug">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="eez-48-Agz">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="09I-Jh-WJN">
+                                            <color key="tintColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onCloseButtonPress:" destination="BYZ-38-t0r" id="Mkn-eu-jpB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
