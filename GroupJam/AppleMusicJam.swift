@@ -1,5 +1,5 @@
 //
-//  Jam.swift
+//  AppleMusicJam.swift
 //  GroupJam
 //
 //  Created by Rohan Daruwala on 10/8/16.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-protocol Jam{
-    
-    
-}
