@@ -24,6 +24,9 @@
 		C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2021DA85D2000BC44AF /* joinJam.png */; };
 		C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2051DA85EA700BC44AF /* applemusic.jpg */; };
 		C18DB20C1DA86AEF00BC44AF /* Private_Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DB20B1DA86AEF00BC44AF /* Private_Config.swift */; };
+		C1D9834F1DA89FAF003C2D3B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9834D1DA89FAF003C2D3B /* Bolts.framework */; };
+		C1D983501DA89FAF003C2D3B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9834E1DA89FAF003C2D3B /* Parse.framework */; };
+		C1D983521DA8A3A2003C2D3B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D983511DA8A3A2003C2D3B /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		C18DB2021DA85D2000BC44AF /* joinJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joinJam.png; path = Resources/Pictures/joinJam.png; sourceTree = "<group>"; };
 		C18DB2051DA85EA700BC44AF /* applemusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = applemusic.jpg; path = Resources/Pictures/applemusic.jpg; sourceTree = "<group>"; };
 		C18DB20B1DA86AEF00BC44AF /* Private_Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private_Config.swift; sourceTree = "<group>"; };
+		C1D9834D1DA89FAF003C2D3B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Resources/Bolts.framework; sourceTree = "<group>"; };
+		C1D9834E1DA89FAF003C2D3B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Resources/Parse.framework; sourceTree = "<group>"; };
+		C1D983511DA8A3A2003C2D3B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +81,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D983521DA8A3A2003C2D3B /* libsqlite3.tbd in Frameworks */,
+				C1D9834F1DA89FAF003C2D3B /* Bolts.framework in Frameworks */,
 				C18DB1F81DA8539400BC44AF /* SystemConfiguration.framework in Frameworks */,
 				C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */,
 				C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */,
+				C1D983501DA89FAF003C2D3B /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +167,9 @@
 		C11037CE1D97368E00BBE12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1D983511DA8A3A2003C2D3B /* libsqlite3.tbd */,
+				C1D9834D1DA89FAF003C2D3B /* Bolts.framework */,
+				C1D9834E1DA89FAF003C2D3B /* Parse.framework */,
 				C18DB1F71DA8539400BC44AF /* SystemConfiguration.framework */,
 				C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */,
 				C11037D11D9736D800BBE12A /* Spotify.framework */,
@@ -239,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Rohan Daruwala";
 				TargetAttributes = {
 					C11037991D9734FF00BBE12A = {
@@ -392,6 +404,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -442,6 +455,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
