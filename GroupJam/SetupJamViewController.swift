@@ -16,6 +16,7 @@ class SetupJamViewController: UIViewController {
     @IBOutlet weak var LocationOption: UISwitch!
     @IBOutlet weak var ApproveOption: UISwitch!
     
+    var isScreenUp:Bool!
     
     
     
@@ -27,6 +28,8 @@ class SetupJamViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(SetupJamViewController.keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
         NotificationCenter.default.addObserver(self, selector: #selector(SetupJamViewController.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
         
+        
+        isScreenUp = false
 
         // Do any additional setup after loading the view.
     }
@@ -39,7 +42,8 @@ class SetupJamViewController: UIViewController {
     
     @IBAction func onScreenTapAction(_ sender: AnyObject) {
         
-        
+        jamNameTextField.resignFirstResponder()
+        jamPassTextField.resignFirstResponder()
         
     }
     
@@ -58,10 +62,14 @@ class SetupJamViewController: UIViewController {
      Moves the screen when keyboard is opened and closed
      **/
     func keyboardWillShow(_ notification: NSNotification) {
-        self.view.frame.origin.y -= 100
+        if(!isScreenUp){
+            self.view.frame.origin.y -= 100
+            isScreenUp = true
+        }
     }
     func keyboardWillHide(_ notification: NSNotification) {
         self.view.frame.origin.y += 100
+        isScreenUp = false
     }
     
 
