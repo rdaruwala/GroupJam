@@ -19,6 +19,11 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     var SpotifyTokenRefresh:String!
     let spotifyAuthenticator = SPTAuth.defaultInstance()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

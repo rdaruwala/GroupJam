@@ -54,7 +54,7 @@
                                     <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Title" id="7aX-Vr-m83"/>
+                                    <navigationItem id="7aX-Vr-m83"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -127,6 +127,7 @@
                                 <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem id="eez-48-Agz">
