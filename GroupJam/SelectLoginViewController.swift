@@ -55,13 +55,28 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     }
     
     func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didLoginWith session: SPTSession!) {
+        let alert = UIAlertController(title: "Login Successful", message:
+            "Successful Login!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     func authenticationViewControllerDidCancelLogin(_ authenticationViewController: SPTAuthViewController!) {
+        let alert = UIAlertController(title: "Login Cancelled", message:
+            "Login Cancelled", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
 
     }
     
     func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didFailToLogin error: Error!) {
+        let alert = UIAlertController(title: "Login Failed", message:
+            "Login Failed!", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
         
     }
 
