@@ -18,6 +18,8 @@ class SetupJamViewController: UIViewController {
     
     var isScreenUp:Bool!
     
+    var typeofJam:String!
+    
     
     
     
