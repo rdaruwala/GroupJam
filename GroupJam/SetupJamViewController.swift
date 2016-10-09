@@ -42,8 +42,7 @@ class SetupJamViewController: UIViewController {
     
     @IBAction func onScreenTapAction(_ sender: AnyObject) {
         
-        jamNameTextField.resignFirstResponder()
-        jamPassTextField.resignFirstResponder()
+        view.endEditing(true)
         
     }
     
@@ -68,8 +67,10 @@ class SetupJamViewController: UIViewController {
         }
     }
     func keyboardWillHide(_ notification: NSNotification) {
+        if(isScreenUp == true){
         self.view.frame.origin.y += 100
         isScreenUp = false
+        }
     }
     
 

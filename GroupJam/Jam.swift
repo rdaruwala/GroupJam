@@ -10,5 +10,12 @@ import Foundation
 
 protocol Jam{
     
+    var name:String {get set}
+    var password:String {get set}
+    var searchable:Bool {get set}
+    var approve:Bool {get set}
+    
+    var type:String {get}
+    
     
 }
