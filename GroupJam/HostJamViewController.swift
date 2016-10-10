@@ -12,11 +12,13 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
     
     var player: SPTAudioStreamingController?
     let configuration = Config()
+    var session:SPTSession!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupSpotifyPlayer()
 
         // Do any additional setup after loading the view.
     }
@@ -44,6 +46,12 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
         }
         player!.playbackDelegate = self
         player!.diskCache = SPTDiskCache(capacity: 1024 * 1024 * 64)
+        player?.login(withAccessToken: session?.accessToken)
+    }
+    
+    func useLoggedInPermissions() {
+        let spotifyURI = "spotify:track:1WJk986df8mpqpktoktlce"
+        player?.playSpotifyURI(spotifyURI, startingWith: 0, startingWithPosition: 0, callback: nil)
     }
     
     /*
