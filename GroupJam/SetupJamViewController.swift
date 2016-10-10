@@ -21,6 +21,8 @@ class SetupJamViewController: UIViewController {
     
     var typeofJam:String!
     
+    var session:SPTSession!
+    
     
     
     
@@ -51,10 +53,14 @@ class SetupJamViewController: UIViewController {
     
     @IBAction func onCreateJamButtonPress(_ sender: AnyObject) {
         let newJam = PFObject(className: typeofJam)
-        newJam.setObject(jamNameTextField.text, forKey: "name")
-        newJam.setObject(jamPassTextField, forKey: "password")
-        newJam.setObject(LocationOption.isOn, forKey: "checkLocation")
-        newJam.setObject(ApproveOption, forKey: "checkApprove")
+        var pass = ""
+        if(jamPassTextField.text != "" && jamPassTextField.text != nil){
+            pass = jamPassTextField.text!
+        }
+        newJam.setObject(jamNameTextField.text!, forKey: "name")
+        newJam.setObject(pass, forKey: "password")
+        newJam.setObject(LocationOption.isEnabled, forKey: "checkLocation")
+        newJam.setObject(ApproveOption.isEnabled, forKey: "checkApprove")
         
         let songList:[Song] = []
         
@@ -72,17 +78,16 @@ class SetupJamViewController: UIViewController {
         
     }*/
         
+        self.performSegue(withIdentifier: "startJam", sender: self)
+        
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "startJam"){
+            let destination = segue.destination as! HostJamViewController
+            destination.session = self.session
+        }
     }
-    */
     
     /**
      Moves the screen when keyboard is opened and closed

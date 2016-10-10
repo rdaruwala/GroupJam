@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="165.06746626686657"/>
         </scene>
-        <!--View Controller-->
+        <!--Host Jam View Controller-->
         <scene sceneID="eXO-Q9-grM">
             <objects>
-                <viewController id="2h5-v4-7KU" sceneMemberID="viewController">
+                <viewController id="2h5-v4-7KU" customClass="HostJamViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R5s-iG-cAD"/>
                         <viewControllerLayoutGuide type="bottom" id="KiC-jk-WeI"/>

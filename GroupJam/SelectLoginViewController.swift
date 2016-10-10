@@ -14,6 +14,8 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     
     var typeOfJam:String!
     
+    var session:SPTSession?
+    
     //Spotify Variables
     var SpotifyID:String!
     var SpotifyCallbackURL:String!
@@ -36,6 +38,8 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
         SpotifyCallbackURL = configuration.SpotifyCallbackURL
         SpotifyTokenSwap = configuration.SpotifyTokenSwap
         SpotifyTokenRefresh = configuration.SpotifyTokenRefresh
+        
+        session = nil
         
     }
     
@@ -64,6 +68,7 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     
     func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didLoginWith session: SPTSession!) {
         typeOfJam = "Spotify"
+        self.session = session
         self.performSegue(withIdentifier: "jamSettings", sender: self)
     }
     @IBAction func onCloseButtonPress(_ sender: AnyObject) {
@@ -94,6 +99,9 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
             if(typeOfJam == "Spotify"){
                 let destination = segue.destination as! SetupJamViewController
                 destination.typeofJam = "Spotify"
+                if(session != nil){
+                    destination.session = self.session
+                }
             }
             else if(typeOfJam == "Apple Music"){
                 let destination = segue.destination as! SetupJamViewController
