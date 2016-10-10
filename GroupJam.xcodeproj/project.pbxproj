@@ -31,6 +31,7 @@
 		C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2021DA85D2000BC44AF /* joinJam.png */; };
 		C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C18DB2051DA85EA700BC44AF /* applemusic.jpg */; };
 		C18DB20C1DA86AEF00BC44AF /* Private_Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DB20B1DA86AEF00BC44AF /* Private_Config.swift */; };
+		C1B4C63A1DAB3F4700A1AF18 /* HostJamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4C6391DAB3F4700A1AF18 /* HostJamViewController.swift */; };
 		C1D9834F1DA89FAF003C2D3B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9834D1DA89FAF003C2D3B /* Bolts.framework */; };
 		C1D983501DA89FAF003C2D3B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D9834E1DA89FAF003C2D3B /* Parse.framework */; };
 		C1D983521DA8A3A2003C2D3B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D983511DA8A3A2003C2D3B /* libsqlite3.tbd */; };
@@ -85,6 +86,7 @@
 		C18DB2021DA85D2000BC44AF /* joinJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joinJam.png; path = Resources/Pictures/joinJam.png; sourceTree = "<group>"; };
 		C18DB2051DA85EA700BC44AF /* applemusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = applemusic.jpg; path = Resources/Pictures/applemusic.jpg; sourceTree = "<group>"; };
 		C18DB20B1DA86AEF00BC44AF /* Private_Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private_Config.swift; sourceTree = "<group>"; };
+		C1B4C6391DAB3F4700A1AF18 /* HostJamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostJamViewController.swift; sourceTree = "<group>"; };
 		C1D9834D1DA89FAF003C2D3B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Resources/Bolts.framework; sourceTree = "<group>"; };
 		C1D9834E1DA89FAF003C2D3B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Resources/Parse.framework; sourceTree = "<group>"; };
 		C1D983511DA8A3A2003C2D3B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -152,6 +154,7 @@
 				C133025C1DA99A7600ABFED5 /* NavigationController.swift */,
 				C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */,
 				C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */,
+				C1B4C6391DAB3F4700A1AF18 /* HostJamViewController.swift */,
 				C11037A11D9734FF00BBE12A /* Main.storyboard */,
 				C11037A71D9734FF00BBE12A /* Assets.xcassets */,
 				C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */,
@@ -364,6 +367,7 @@
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
 				C110379E1D9734FF00BBE12A /* AppDelegate.swift in Sources */,
 				C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */,
+				C1B4C63A1DAB3F4700A1AF18 /* HostJamViewController.swift in Sources */,
 				C13302541DA96D2200ABFED5 /* Jam.swift in Sources */,
 				C133025D1DA99A7600ABFED5 /* NavigationController.swift in Sources */,
 				C11037A61D9734FF00BBE12A /* GroupJam.xcdatamodeld in Sources */,
