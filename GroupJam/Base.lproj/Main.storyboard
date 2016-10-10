@@ -155,6 +155,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obf-nk-OXH">
                                 <frame key="frameInset" minX="27" minY="518" width="322" height="69"/>
                                 <state key="normal" image="createJam.png"/>
+                                <connections>
+                                    <action selector="onCreateJamButtonPress:" destination="axx-AW-nPD" eventType="touchUpInside" id="rGK-57-wFH"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Wb-aJ-nXG">
                                 <frame key="frameInset" minX="239" minY="366" width="51" height="31"/>

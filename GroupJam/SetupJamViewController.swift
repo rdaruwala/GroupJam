@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SetupJamViewController: UIViewController {
 
@@ -48,6 +49,30 @@ class SetupJamViewController: UIViewController {
         
     }
     
+    @IBAction func onCreateJamButtonPress(_ sender: AnyObject) {
+        let newJam = PFObject(className: typeofJam)
+        newJam.setObject(jamNameTextField.text, forKey: "name")
+        newJam.setObject(jamPassTextField, forKey: "password")
+        newJam.setObject(LocationOption.isOn, forKey: "checkLocation")
+        newJam.setObject(ApproveOption, forKey: "checkApprove")
+        
+        let songList:[Song] = []
+        
+        
+        /*newJam.saveInBackground { (succeeded, error) -> Void in
+            if succeeded {
+                self.performSegue(withIdentifier: "startJam", sender: self)
+            } else {
+                let alert = UIAlertController(title: "Jam Creation Failed", message:
+                    "Error Connecting to Database", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
+            }
+        
+    }*/
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -77,3 +102,4 @@ class SetupJamViewController: UIViewController {
     
 
 }
+
