@@ -22,6 +22,8 @@
 		C13302591DA96DC000ABFED5 /* SpotifyJam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13302581DA96DC000ABFED5 /* SpotifyJam.swift */; };
 		C133025B1DA96DEA00ABFED5 /* AppleMusicJam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133025A1DA96DEA00ABFED5 /* AppleMusicJam.swift */; };
 		C133025D1DA99A7600ABFED5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133025C1DA99A7600ABFED5 /* NavigationController.swift */; };
+		C1503BA71DABFE9000C5260F /* joinJam2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1503BA61DABFE9000C5260F /* joinJam2.png */; };
+		C1503BA91DABFEC700C5260F /* FindJamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1503BA81DABFEC700C5260F /* FindJamViewController.swift */; };
 		C16473661DA99CB200AAE9EA /* SetupJamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */; };
 		C16473681DA9A28200AAE9EA /* createJam.png in Resources */ = {isa = PBXBuildFile; fileRef = C16473671DA9A28200AAE9EA /* createJam.png */; };
 		C18DB1F61DA8536F00BC44AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */; };
@@ -77,6 +79,8 @@
 		C13302581DA96DC000ABFED5 /* SpotifyJam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyJam.swift; sourceTree = "<group>"; };
 		C133025A1DA96DEA00ABFED5 /* AppleMusicJam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicJam.swift; sourceTree = "<group>"; };
 		C133025C1DA99A7600ABFED5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C1503BA61DABFE9000C5260F /* joinJam2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joinJam2.png; path = Resources/Pictures/joinJam2.png; sourceTree = "<group>"; };
+		C1503BA81DABFEC700C5260F /* FindJamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindJamViewController.swift; sourceTree = "<group>"; };
 		C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupJamViewController.swift; sourceTree = "<group>"; };
 		C16473671DA9A28200AAE9EA /* createJam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = createJam.png; path = Resources/Pictures/createJam.png; sourceTree = "<group>"; };
 		C18DB1F51DA8536F00BC44AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -150,15 +154,16 @@
 		C110379C1D9734FF00BBE12A /* GroupJam */ = {
 			isa = PBXGroup;
 			children = (
+				C1503BA81DABFEC700C5260F /* FindJamViewController.swift */,
 				C18DB20B1DA86AEF00BC44AF /* Private_Config.swift */,
 				C110379D1D9734FF00BBE12A /* AppDelegate.swift */,
+				C1152A541DABE9C800251A10 /* ViewJamSongsVC.swift */,
 				C110379F1D9734FF00BBE12A /* ViewController.swift */,
 				C133025C1DA99A7600ABFED5 /* NavigationController.swift */,
 				C18DB1FF1DA85A1700BC44AF /* SelectLoginViewController.swift */,
 				C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */,
 				C1B4C6391DAB3F4700A1AF18 /* HostJamViewController.swift */,
 				C11037A11D9734FF00BBE12A /* Main.storyboard */,
-				C1152A541DABE9C800251A10 /* ViewJamSongsVC.swift */,
 				C11037A71D9734FF00BBE12A /* Assets.xcassets */,
 				C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */,
 				C11037AC1D9734FF00BBE12A /* Info.plist */,
@@ -214,6 +219,7 @@
 		C18DB1FE1DA8576C00BC44AF /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				C1503BA61DABFE9000C5260F /* joinJam2.png */,
 				C16473671DA9A28200AAE9EA /* createJam.png */,
 				C18DB2051DA85EA700BC44AF /* applemusic.jpg */,
 				C18DB1FC1DA8575C00BC44AF /* spotify.png */,
@@ -336,6 +342,7 @@
 				C11037AB1D9734FF00BBE12A /* LaunchScreen.storyboard in Resources */,
 				C11037A81D9734FF00BBE12A /* Assets.xcassets in Resources */,
 				C11037A31D9734FF00BBE12A /* Main.storyboard in Resources */,
+				C1503BA71DABFE9000C5260F /* joinJam2.png in Resources */,
 				C16473681DA9A28200AAE9EA /* createJam.png in Resources */,
 				C18DB2061DA85EA700BC44AF /* applemusic.jpg in Resources */,
 				C18DB2041DA85D2000BC44AF /* joinJam.png in Resources */,
@@ -370,6 +377,7 @@
 				C18DB20C1DA86AEF00BC44AF /* Private_Config.swift in Sources */,
 				C1152A551DABE9C800251A10 /* ViewJamSongsVC.swift in Sources */,
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
+				C1503BA91DABFEC700C5260F /* FindJamViewController.swift in Sources */,
 				C110379E1D9734FF00BBE12A /* AppDelegate.swift in Sources */,
 				C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */,
 				C1B4C63A1DAB3F4700A1AF18 /* HostJamViewController.swift in Sources */,

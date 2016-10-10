@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-767.20000000000005" y="142.57871064467767"/>
         </scene>
-        <!--View Controller-->
+        <!--Find Jam View Controller-->
         <scene sceneID="3Z5-Jo-jjC">
             <objects>
-                <viewController id="e0O-ek-yx7" sceneMemberID="viewController">
+                <viewController id="e0O-ek-yx7" customClass="FindJamViewController" customModule="GroupJam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4FT-F3-87p"/>
                         <viewControllerLayoutGuide type="bottom" id="67T-22-4kv"/>
@@ -123,9 +123,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-VP-gxL">
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-VP-gxL">
                                 <frame key="frameInset" minX="47" minY="563" width="281" height="56"/>
-                                <state key="normal" image="joinJam.png"/>
+                                <state key="normal" image="joinJam2.png"/>
+                                <connections>
+                                    <action selector="onJoinJamButtonPress:" destination="e0O-ek-yx7" eventType="touchUpInside" id="lrH-gd-n5I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -146,6 +149,9 @@
                             <constraint firstItem="9zX-nG-jcI" firstAttribute="top" secondItem="m7a-sU-A54" secondAttribute="bottom" constant="48" id="lrm-HP-nnd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jamMapView" destination="m7a-sU-A54" id="EB3-Wv-8vT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-3P-3Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,6 +409,7 @@
         <image name="createJam.png" width="268" height="69"/>
         <image name="hostJam.png" width="217" height="56"/>
         <image name="joinJam.png" width="208" height="56"/>
+        <image name="joinJam2.png" width="165" height="52"/>
         <image name="spotify.png" width="1070" height="487"/>
     </resources>
 </document>
