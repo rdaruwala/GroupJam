@@ -47,6 +47,7 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
         player!.playbackDelegate = self
         player!.diskCache = SPTDiskCache(capacity: 1024 * 1024 * 64)
         player?.login(withAccessToken: session?.accessToken)
+        useLoggedInPermissions()
     }
     
     func useLoggedInPermissions() {

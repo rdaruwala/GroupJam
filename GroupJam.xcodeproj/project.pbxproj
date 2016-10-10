@@ -16,6 +16,7 @@
 		C11037B61D9734FF00BBE12A /* GroupJamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037B51D9734FF00BBE12A /* GroupJamTests.swift */; };
 		C11037C11D9734FF00BBE12A /* GroupJamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */; };
 		C11037D21D9736D800BBE12A /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11037D11D9736D800BBE12A /* Spotify.framework */; };
+		C1152A551DABE9C800251A10 /* ViewJamSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1152A541DABE9C800251A10 /* ViewJamSongsVC.swift */; };
 		C13302541DA96D2200ABFED5 /* Jam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13302531DA96D2200ABFED5 /* Jam.swift */; };
 		C13302561DA96D3B00ABFED5 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13302551DA96D3B00ABFED5 /* Song.swift */; };
 		C13302591DA96DC000ABFED5 /* SpotifyJam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13302581DA96DC000ABFED5 /* SpotifyJam.swift */; };
@@ -70,6 +71,7 @@
 		C11037C01D9734FF00BBE12A /* GroupJamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupJamUITests.swift; sourceTree = "<group>"; };
 		C11037C21D9734FF00BBE12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11037D11D9736D800BBE12A /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Spotify.framework; sourceTree = "<group>"; };
+		C1152A541DABE9C800251A10 /* ViewJamSongsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewJamSongsVC.swift; sourceTree = "<group>"; };
 		C13302531DA96D2200ABFED5 /* Jam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jam.swift; sourceTree = "<group>"; };
 		C13302551DA96D3B00ABFED5 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		C13302581DA96DC000ABFED5 /* SpotifyJam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyJam.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				C16473651DA99CB200AAE9EA /* SetupJamViewController.swift */,
 				C1B4C6391DAB3F4700A1AF18 /* HostJamViewController.swift */,
 				C11037A11D9734FF00BBE12A /* Main.storyboard */,
+				C1152A541DABE9C800251A10 /* ViewJamSongsVC.swift */,
 				C11037A71D9734FF00BBE12A /* Assets.xcassets */,
 				C11037A91D9734FF00BBE12A /* LaunchScreen.storyboard */,
 				C11037AC1D9734FF00BBE12A /* Info.plist */,
@@ -365,6 +368,7 @@
 				C16473661DA99CB200AAE9EA /* SetupJamViewController.swift in Sources */,
 				C13302591DA96DC000ABFED5 /* SpotifyJam.swift in Sources */,
 				C18DB20C1DA86AEF00BC44AF /* Private_Config.swift in Sources */,
+				C1152A551DABE9C800251A10 /* ViewJamSongsVC.swift in Sources */,
 				C11037A01D9734FF00BBE12A /* ViewController.swift in Sources */,
 				C110379E1D9734FF00BBE12A /* AppDelegate.swift in Sources */,
 				C18DB2001DA85A1700BC44AF /* SelectLoginViewController.swift in Sources */,

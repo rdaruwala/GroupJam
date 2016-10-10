@@ -83,11 +83,40 @@
                     <connections>
                         <outlet property="hostJamButton" destination="mZX-Hp-z0x" id="ALv-kg-xsw"/>
                         <outlet property="joinJamButton" destination="uM5-3F-yry" id="GYf-Vj-9NG"/>
+                        <segue destination="cs4-JX-V0A" kind="show" identifier="joinJam" id="LOK-am-jGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yz-TH-bVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-767.20000000000005" y="142.57871064467767"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="veg-M8-rDU">
+            <objects>
+                <tableViewController id="cs4-JX-V0A" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="U3W-1N-R2z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Czl-xp-NUf">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czl-xp-NUf" id="0af-OW-QNp">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cs4-JX-V0A" id="7xV-Jy-Pnk"/>
+                            <outlet property="delegate" destination="cs4-JX-V0A" id="kXa-gh-gco"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQ4-R1-7ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-773" y="954"/>
         </scene>
         <!--Setup Jam View Controller-->
         <scene sceneID="4bR-xF-BcI">
