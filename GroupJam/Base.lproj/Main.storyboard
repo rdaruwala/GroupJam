@@ -102,13 +102,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-Zr-J32">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-Zr-J32">
                                 <frame key="frameInset" minX="16" minY="72" width="343" height="91"/>
                                 <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="41"/>
                                 <color key="textColor" red="1" green="0.35739266600000003" blue="0.22437102489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select a Location on the Map or input the Jam name below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Y-xT-VJa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select a Location on the Map or input the Jam name below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Y-xT-VJa">
                                 <frame key="frameInset" minX="16" minY="171" width="343" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -147,11 +147,13 @@
                             <constraint firstItem="51Y-xT-VJa" firstAttribute="top" secondItem="EXV-Zr-J32" secondAttribute="bottom" constant="8" id="gdC-Qh-MmQ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4Oo-VP-gxL" secondAttribute="leading" id="lTw-jH-9F0"/>
                             <constraint firstItem="9zX-nG-jcI" firstAttribute="top" secondItem="m7a-sU-A54" secondAttribute="bottom" constant="48" id="lrm-HP-nnd"/>
+                            <constraint firstItem="EXV-Zr-J32" firstAttribute="top" secondItem="4FT-F3-87p" secondAttribute="bottom" constant="8" id="nvh-Y9-ciY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="jamMapView" destination="m7a-sU-A54" id="l0p-H8-6W3"/>
                         <outlet property="jamTextField" destination="9zX-nG-jcI" id="3xC-cB-SGm"/>
+                        <segue destination="cs4-JX-V0A" kind="show" identifier="intoJam" id="OSU-yI-dwJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-3P-3Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,7 +170,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Czl-xp-NUf">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czl-xp-NUf" id="0af-OW-QNp">
                                     <frame key="frameInset" width="375" height="43"/>
