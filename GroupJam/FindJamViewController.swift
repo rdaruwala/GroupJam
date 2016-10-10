@@ -13,7 +13,7 @@ class FindJamViewController: UIViewController {
 
     @IBOutlet var jamMapView: MKMapView!
     
-    
+    @IBOutlet weak var jamTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,13 +26,8 @@ class FindJamViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func onJoinJamButtonPress(_ sender: AnyObject) {
-        
-        
-        
     }
-    
 
     /*
     // MARK: - Navigation

@@ -127,7 +127,7 @@
                                 <frame key="frameInset" minX="47" minY="563" width="281" height="56"/>
                                 <state key="normal" image="joinJam2.png"/>
                                 <connections>
-                                    <action selector="onJoinJamButtonPress:" destination="e0O-ek-yx7" eventType="touchUpInside" id="lrH-gd-n5I"/>
+                                    <action selector="onJoinJamButtonPress:" destination="e0O-ek-yx7" eventType="touchUpInside" id="ENp-bz-tEi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,7 +150,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="jamMapView" destination="m7a-sU-A54" id="EB3-Wv-8vT"/>
+                        <outlet property="jamMapView" destination="m7a-sU-A54" id="l0p-H8-6W3"/>
+                        <outlet property="jamTextField" destination="9zX-nG-jcI" id="3xC-cB-SGm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-3P-3Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
