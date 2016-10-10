@@ -10,6 +10,9 @@ import UIKit
 import Parse
 
 class ViewJamSongsVC: UITableViewController {
+    
+    var songList:[PFObject]!
+    var typeOfJam:[String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +37,7 @@ class ViewJamSongsVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return songList.count
     }
 
     /*

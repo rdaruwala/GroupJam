@@ -60,6 +60,7 @@
                                 <state key="normal" image="joinJam.png"/>
                                 <connections>
                                     <action selector="onJoinJamButtonPress:" destination="77R-XY-exQ" eventType="touchUpInside" id="tev-MF-IMT"/>
+                                    <segue destination="e0O-ek-yx7" kind="show" id="eFh-m7-AuL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,12 +84,72 @@
                     <connections>
                         <outlet property="hostJamButton" destination="mZX-Hp-z0x" id="ALv-kg-xsw"/>
                         <outlet property="joinJamButton" destination="uM5-3F-yry" id="GYf-Vj-9NG"/>
-                        <segue destination="cs4-JX-V0A" kind="show" identifier="joinJam" id="LOK-am-jGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Yz-TH-bVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-767.20000000000005" y="142.57871064467767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Z5-Jo-jjC">
+            <objects>
+                <viewController id="e0O-ek-yx7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4FT-F3-87p"/>
+                        <viewControllerLayoutGuide type="bottom" id="67T-22-4kv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ib0-r9-JHy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="GroupJam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXV-Zr-J32">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="91"/>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="41"/>
+                                <color key="textColor" red="1" green="0.35739266600000003" blue="0.22437102489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Select a Location on the Map or input the Jam name below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51Y-xT-VJa">
+                                <frame key="frameInset" minX="16" minY="171" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.38458362480000002" blue="0.2379250229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-sU-A54">
+                                <frame key="frameInset" minX="16" minY="246" width="343" height="207"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jam Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9zX-nG-jcI">
+                                <frame key="frameInset" minX="16" minY="501" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-VP-gxL">
+                                <frame key="frameInset" minX="47" minY="563" width="281" height="56"/>
+                                <state key="normal" image="joinJam.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="4Oo-VP-gxL" firstAttribute="top" secondItem="9zX-nG-jcI" secondAttribute="bottom" constant="45" id="13x-AN-klJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m7a-sU-A54" secondAttribute="trailing" id="1LG-tj-RAI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="51Y-xT-VJa" secondAttribute="leading" id="C2B-3j-pj7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EXV-Zr-J32" secondAttribute="trailing" id="Dra-v7-uo2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="m7a-sU-A54" secondAttribute="leading" id="Ehq-WQ-Rsp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EXV-Zr-J32" secondAttribute="leading" id="Nq0-RZ-ul8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9zX-nG-jcI" secondAttribute="leading" id="Ol0-Ey-LTh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51Y-xT-VJa" secondAttribute="trailing" id="Q44-VJ-biD"/>
+                            <constraint firstItem="m7a-sU-A54" firstAttribute="top" secondItem="51Y-xT-VJa" secondAttribute="bottom" constant="32" id="VdM-Zj-cwG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Oo-VP-gxL" secondAttribute="trailing" id="YKq-Ai-pAc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9zX-nG-jcI" secondAttribute="trailing" id="YjF-Rb-BCb"/>
+                            <constraint firstItem="51Y-xT-VJa" firstAttribute="top" secondItem="EXV-Zr-J32" secondAttribute="bottom" constant="8" id="gdC-Qh-MmQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4Oo-VP-gxL" secondAttribute="leading" id="lTw-jH-9F0"/>
+                            <constraint firstItem="9zX-nG-jcI" firstAttribute="top" secondItem="m7a-sU-A54" secondAttribute="bottom" constant="48" id="lrm-HP-nnd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-3P-3Ji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767.20000000000005" y="889.20539730134942"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="veg-M8-rDU">
@@ -100,7 +161,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Czl-xp-NUf">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czl-xp-NUf" id="0af-OW-QNp">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -116,7 +177,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQ4-R1-7ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-773" y="954"/>
+            <point key="canvasLocation" x="164" y="891"/>
         </scene>
         <!--Setup Jam View Controller-->
         <scene sceneID="4bR-xF-BcI">
