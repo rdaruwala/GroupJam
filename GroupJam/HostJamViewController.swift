@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate {
+class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAudioStreamingDelegate {
     
     var player: SPTAudioStreamingController?
     let configuration = Config()
@@ -17,7 +17,6 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupSpotifyPlayer()
 
         // Do any additional setup after loading the view.
@@ -31,8 +30,9 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
     func setupSpotifyPlayer() {
         player = SPTAudioStreamingController.sharedInstance()
         do{
+            let auth:SPTAuth = SPTAuth.defaultInstance()
             try
-            player?.start(withClientId: configuration.SpotifyID)
+            player?.start(withClientId: auth.clientID)
         }
         catch {
             let alert = UIAlertController(title: "Jam Start Failed", message:
@@ -51,8 +51,14 @@ class HostJamViewController: UIViewController, SPTAudioStreamingPlaybackDelegate
     }
     
     func useLoggedInPermissions() {
-        let spotifyURI = "spotify:track:1WJk986df8mpqpktoktlce"
-        player?.playSpotifyURI(spotifyURI, startingWith: 0, startingWithPosition: 0, callback: nil)
+        let spotifyURI = "spotify:track:1mGns9Qm7GxSjrk5tg7EsI"
+       // player?.playSpotifyURI(spotifyURI, startingWith: 0, startingWithPosition: 0, callback: nil)
+        player?.playSpotifyURI(spotifyURI, startingWith: 0, startingWithPosition: 0, callback: { (Error) in
+            print("Start error")
+            print(Error)
+            print("End error")
+        })
+        //player!.playURIs([NSURL(string: spotifyURI)!], withOptions: nil, callback: nil)
     }
     
     /*

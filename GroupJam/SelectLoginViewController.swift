@@ -69,6 +69,8 @@ class SelectLoginViewController: UIViewController, SPTAuthViewDelegate {
     func authenticationViewController(_ authenticationViewController: SPTAuthViewController!, didLoginWith session: SPTSession!) {
         typeOfJam = "Spotify"
         self.session = session
+
+        
         self.performSegue(withIdentifier: "jamSettings", sender: self)
     }
     @IBAction func onCloseButtonPress(_ sender: AnyObject) {
